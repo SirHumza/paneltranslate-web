@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "file": "indonesian.png",
+  "width": 1000,
+  "height": 700,
+  "regions": [
+    {
+      "text": "Kau dari Hokkaido, kan.\nPernah dengar soal mereka?",
+      "box": [
+        318,
+        105,
+        363,
+        65
+      ],
+      "confidence": 96,
+      "words": [
+        {
+          "text": "Kau",
+          "box": [
+            351,
+            105,
+            47,
+            20
+          ]
+        },
+        {
+          "text": "dari",
+          "box": [
+            409,
+            105,
+            44,
+            20
+          ]
+        },
+        {
+          "text": "Hokkaido,",
+          "box": [
+            465,
+            105,
+            121,
+            25
+          ]
+        },
+        {
+          "text": "kan.",
+          "box": [
+            599,
+            105,
+            49,
+            20
+          ]
+        },
+        {
+          "text": "Pernah",
+          "box": [
+            318,
+            144,
+            88,
+            20
+          ]
+        },
+        {
+          "text": "dengar",
+          "box": [
+            417,
+            144,
+            89,
+            26
+          ]
+        },
+        {
+          "text": "soal",
+          "box": [
+            514,
+            144,
+            49,
+            20
+          ]
+        },
+        {
+          "text": "mereka?",
+          "box": [
+            575,
+            144,
+            106,
+            20
+          ]
+        }
+      ],
+      "id": "r1",
+      "translation": "You're from Hokkaido, right. Ever heard of them?",
+      "enabled": true
+    },
+    {
+      "text": "Aku baru pertama kali dengar.\nAkan kutanyakan pada teman-temanku\ndi kampung halaman.",
+      "box": [
+        252,
+        406,
+        494,
+        103
+      ],
+      "confidence": 95,
+      "words": [
+        {
+          "text": "Aku",
+          "box": [
+            310,
+            406,
+            47,
+            20
+          ]
+        },
+        {
+          "text": "baru",
+          "box": [
+            369,
+            406,
+            53,
+            20
+          ]
+        },
+        {
+          "text": "pertama",
+          "box": [
+            434,
+            406,
+            100,
+            26
+          ]
+        },
+        {
+          "text": "kali",
+          "box": [
+            546,
+            406,
+            38,
+            20
+          ]
+        },
+        {
+          "text": "dengar.",
+          "box": [
+            595,
+            406,
+            93,
+            26
+          ]
+        },
+        {
+          "text": "Akan",
+          "box": [
+            252,
+            445,
+            63,
+            20
+          ]
+        },
+        {
+          "text": "kutanyakan",
+          "box": [
+            327,
+            445,
+            142,
+            26
+          ]
+        },
+        {
+          "text": "pada",
+          "box": [
+            481,
+            445,
+            60,
+            26
+          ]
+        },
+        {
+          "text": "teman-temanku",
+          "box": [
+            551,
+            445,
+            195,
+            20
+          ]
+        },
+        {
+          "text": "di",
+          "box": [
+            365,
+            483,
+            19,
+            20
+          ]
+        },
+        {
+          "text": "kampung",
+          "box": [
+            396,
+            483,
+            113,
+            26
+          ]
+        },
+        {
+          "text": "halaman.",
+          "box": [
+            521,
+            483,
+            112,
+            20
+          ]
+        }
+      ],
+      "id": "r2",
+      "translation": "I just heard it the first time. I'll ask my friends back home.",
+      "enabled": true
+    }
+  ],
+  "issues": []
+}

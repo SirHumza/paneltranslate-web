@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f4ed">
+  <title>PanelTranslate · Comic translation workspace</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="mast">
+    <a class="wordmark" href="./" aria-label="PanelTranslate home"><span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>PanelTranslate</a>
+    <span class="local"><i aria-hidden="true"></i> Browser workspace</span>
+  </header>
+  <main>
+    <div class="intro">
+      <div><h1>Translation studio<span>.</span></h1><p>Translate comic pages into English and review the lettering on your device.</p></div>
+      <label class="button primary upload"><span aria-hidden="true">＋</span> Open images<input type="file" id="files" accept="image/*" multiple></label>
+    </div>
+    <div class="workspace">
+      <section class="panel preview-panel" aria-labelledby="preview-title">
+        <header class="panel-head"><h2 id="preview-title">Page preview</h2><select id="view" aria-label="Preview version"><option value="original">Original</option><option value="output">Translation</option></select></header>
+        <div class="stage">
+          <canvas id="preview" width="0" height="0" aria-label="Comic page preview">Comic page preview</canvas>
+          <div class="empty">
+            <div class="print" aria-hidden="true"><div class="panoramic"></div><div class="sun"></div><div class="speed"></div></div>
+            <h3>Open your first page</h3><p>Choose one or more comic images to begin.</p><button type="button" id="sample">Try the Indonesian sample</button>
+          </div>
+        </div>
+        <footer class="page-bar"><label for="pages">Page</label><select id="pages" aria-label="Current page"><option value="">No images open</option></select><button id="addRegion" type="button">Add region</button></footer>
+      </section>
+      <aside class="right">
+        <section class="panel settings" aria-labelledby="settings-title">
+          <header class="panel-head"><h2 id="settings-title">Translation</h2></header>
+          <div class="settings-body">
+            <label for="language">Source language</label>
+            <select id="language"><option value="ind">Indonesian</option><option value="jpn">Japanese</option><option value="kor">Korean</option><option value="chi_sim">Chinese (Simplified)</option><option value="chi_tra">Chinese (Traditional)</option><option value="spa">Spanish</option><option value="fra">French</option><option value="eng">English</option></select>
+            <button class="run" id="run" type="button">Translate page <span aria-hidden="true">→</span></button>
+            <p id="status" role="status" aria-live="polite">Choose an image to get started.</p>
+          </div>
+        </section>
+        <section class="panel dialogue" aria-labelledby="dialogue-title"><header class="panel-head"><h2 id="dialogue-title">Dialogue</h2></header><div id="regions"></div></section>
+        <section class="panel export" aria-labelledby="export-title"><header class="panel-head"><h2 id="export-title">Export</h2></header>
+          <div class="export-body"><button id="download" type="button">Download PNG <span aria-hidden="true">↓</span></button><div class="json"><button id="saveJson" type="button">Save dialogue</button><label class="button">Load dialogue<input id="loadJson" type="file" accept="application/json,.json"></label></div></div>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
