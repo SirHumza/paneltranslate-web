@@ -15,11 +15,11 @@
   <main>
     <div class="intro">
       <div><h1>Translation studio<span>.</span></h1><p>Translate comic pages into English and review the lettering on your device.</p></div>
-      <label class="button primary upload"><span aria-hidden="true">＋</span> Open images<input type="file" id="files" accept="image/*" multiple></label>
+      <label class="button primary upload"><span aria-hidden="true">＋</span> Open images or CBZ<input type="file" id="files" accept="image/*,.cbz,.zip" multiple></label>
     </div>
     <div class="workspace">
       <section class="panel preview-panel" aria-labelledby="preview-title">
-        <header class="panel-head"><h2 id="preview-title">Page preview</h2><select id="view" aria-label="Preview version"><option value="original">Original</option><option value="output">Translation</option></select></header>
+        <header class="panel-head"><h2 id="preview-title">Page preview</h2><select id="view" aria-label="Preview version"><option value="original">Original</option><option value="output">Translation</option><option value="regions">Detected regions</option></select></header>
         <div class="stage">
           <canvas id="preview" width="0" height="0" aria-label="Comic page preview">Comic page preview</canvas>
           <div class="empty">
@@ -34,14 +34,15 @@
           <header class="panel-head"><h2 id="settings-title">Translation</h2></header>
           <div class="settings-body">
             <label for="language">Source language</label>
-            <select id="language"><option value="ind">Indonesian</option><option value="jpn">Japanese</option><option value="kor">Korean</option><option value="chi_sim">Chinese (Simplified)</option><option value="chi_tra">Chinese (Traditional)</option><option value="spa">Spanish</option><option value="fra">French</option><option value="eng">English</option></select>
+            <select id="language"><option value="ind">Indonesian</option><option value="jpn">Japanese</option><option value="kor">Korean</option><option value="chi_sim">Chinese (Simplified)</option><option value="chi_tra">Chinese (Traditional)</option><option value="spa">Spanish</option><option value="fra">French</option><option value="por">Portuguese</option><option value="vie">Vietnamese</option><option value="tha">Thai</option><option value="rus">Russian</option><option value="eng">English</option></select>
             <button class="run" id="run" type="button">Translate page <span aria-hidden="true">→</span></button>
+            <button id="batch" type="button" hidden>Translate chapter</button>
             <p id="status" role="status" aria-live="polite">Choose an image to get started.</p>
           </div>
         </section>
         <section class="panel dialogue" aria-labelledby="dialogue-title"><header class="panel-head"><h2 id="dialogue-title">Dialogue</h2></header><div id="regions"></div></section>
         <section class="panel export" aria-labelledby="export-title"><header class="panel-head"><h2 id="export-title">Export</h2></header>
-          <div class="export-body"><button id="download" type="button">Download PNG <span aria-hidden="true">↓</span></button><div class="json"><button id="saveJson" type="button">Save dialogue</button><label class="button">Load dialogue<input id="loadJson" type="file" accept="application/json,.json"></label></div></div>
+          <div class="export-body"><button id="download" type="button">Download PNG <span aria-hidden="true">↓</span></button><button id="chapterDownload" type="button" hidden>Download chapter CBZ</button><div class="json"><button id="saveJson" type="button">Save dialogue</button><label class="button">Load dialogue<input id="loadJson" type="file" accept="application/json,.json"></label></div></div>
         </section>
       </aside>
     </div>
